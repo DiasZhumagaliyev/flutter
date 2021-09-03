@@ -551,64 +551,65 @@ class DefaultMaterialLocalizations implements MaterialLocalizations {
 
   // Ordered to match DateTime.monday=1, DateTime.sunday=6
   static const List<String> _shortWeekdays = <String>[
-    'Mon',
-    'Tue',
-    'Wed',
-    'Thu',
-    'Fri',
-    'Sat',
-    'Sun',
+    'Пн',
+    'Вт',
+    'Ср',
+    'Чт',
+    'Пт',
+    'Сб',
+    'Вс',
   ];
 
   // Ordered to match DateTime.monday=1, DateTime.sunday=6
   static const List<String> _weekdays = <String>[
-    'Monday',
-    'Tuesday',
-    'Wednesday',
-    'Thursday',
-    'Friday',
-    'Saturday',
-    'Sunday',
+    'Понедельник',
+    'Вторник',
+    'Среда',
+    'Четверг',
+    'Пятница',
+    'Суббота',
+    'Воскресенье',
   ];
 
   static const List<String> _narrowWeekdays = <String>[
-    'S',
-    'M',
-    'T',
-    'W',
-    'T',
-    'F',
-    'S',
+    'Вс',
+    'Пн',
+    'Вт',
+    'Ср',
+    'Чт',
+    'Пт',
+    'Сб',
+    'Вс',
   ];
 
   static const List<String> _shortMonths = <String>[
-    'Jan',
-    'Feb',
-    'Mar',
-    'Apr',
-    'May',
-    'Jun',
-    'Jul',
-    'Aug',
-    'Sep',
-    'Oct',
-    'Nov',
-    'Dec',
+    'Янв',
+    'Фев',
+    'Март',
+    'Апр',
+    'Май',
+    'Июнь',
+    'Июль',
+    'Авг',
+    'Сен',
+    'Окт',
+    'Ноя',
+    'Дек',
   ];
 
   static const List<String> _months = <String>[
-    'January',
-    'February',
-    'March',
-    'April',
-    'May',
-    'June',
-    'July',
-    'August',
-    'September',
-    'October',
-    'November',
-    'December',
+    'Январь',
+    'Февраль',
+    'Март',
+    'Апрель',
+    'Май',
+    'Июнь',
+    'Июлб',
+    'Август',
+    'Сентябрь',
+    'Октябрь',
+    'Ноябрь',
+    'Декабрь',
   ];
 
   /// Returns the number of days in a month, according to the proleptic
@@ -744,73 +745,73 @@ class DefaultMaterialLocalizations implements MaterialLocalizations {
   String get dateHelpText => 'mm/dd/yyyy';
 
   @override
-  String get selectYearSemanticsLabel => 'Select year';
+  String get selectYearSemanticsLabel => 'Выбрать год';
 
   @override
-  String get unspecifiedDate => 'Date';
+  String get unspecifiedDate => 'Дата';
 
   @override
-  String get unspecifiedDateRange => 'Date Range';
+  String get unspecifiedDateRange => 'Промежуток времени';
 
   @override
-  String get dateInputLabel => 'Enter Date';
+  String get dateInputLabel => 'Введите дату';
 
   @override
-  String get dateRangeStartLabel => 'Start Date';
+  String get dateRangeStartLabel => 'Начало';
 
   @override
-  String get dateRangeEndLabel => 'End Date';
+  String get dateRangeEndLabel => 'Конец';
 
   @override
-  String dateRangeStartDateSemanticLabel(String fullDate) => 'Start date $fullDate';
+  String dateRangeStartDateSemanticLabel(String fullDate) => 'Начало $fullDate';
 
   @override
-  String dateRangeEndDateSemanticLabel(String fullDate) => 'End date $fullDate';
+  String dateRangeEndDateSemanticLabel(String fullDate) => 'Конец $fullDate';
 
   @override
-  String get invalidDateFormatLabel => 'Invalid format.';
+  String get invalidDateFormatLabel => 'Неверный формат';
 
   @override
-  String get invalidDateRangeLabel => 'Invalid range.';
+  String get invalidDateRangeLabel => 'Неверный промежуток';
 
   @override
-  String get dateOutOfRangeLabel => 'Out of range.';
+  String get dateOutOfRangeLabel => 'Вне промежутка';
 
   @override
-  String get saveButtonLabel => 'SAVE';
+  String get saveButtonLabel => 'СОХРАНИТЬ';
 
   @override
-  String get datePickerHelpText => 'SELECT DATE';
+  String get datePickerHelpText => 'ВЫБРАТЬ';
 
   @override
-  String get dateRangePickerHelpText => 'SELECT RANGE';
+  String get dateRangePickerHelpText => 'ВЫБРАТЬ ПРОМЕЖУТОК';
 
   @override
-  String get calendarModeButtonLabel => 'Switch to calendar';
+  String get calendarModeButtonLabel => 'Перейти в календарь';
 
   @override
-  String get inputDateModeButtonLabel => 'Switch to input';
+  String get inputDateModeButtonLabel => 'Перейти в ввод';
 
   @override
-  String get timePickerDialHelpText => 'SELECT TIME';
+  String get timePickerDialHelpText => 'Выбрать время';
 
   @override
-  String get timePickerInputHelpText => 'ENTER TIME';
+  String get timePickerInputHelpText => 'Ввести время';
 
   @override
-  String get timePickerHourLabel => 'Hour';
+  String get timePickerHourLabel => 'Час';
 
   @override
-  String get timePickerMinuteLabel => 'Minute';
+  String get timePickerMinuteLabel => 'Минута';
 
   @override
-  String get invalidTimeLabel => 'Enter a valid time';
+  String get invalidTimeLabel => 'Введите правильное время';
 
   @override
-  String get dialModeButtonLabel => 'Switch to dial picker mode';
+  String get dialModeButtonLabel => 'Перейти в ввод цифр';
 
   @override
-  String get inputTimeModeButtonLabel => 'Switch to text input mode';
+  String get inputTimeModeButtonLabel => 'Перейти в ввод текста';
 
   String _formatDayPeriod(TimeOfDay timeOfDay) {
     switch (timeOfDay.period) {
